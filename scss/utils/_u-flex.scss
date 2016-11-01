@@ -1,0 +1,46 @@
+/* .u-flex */
+
+.u-flex {
+    @include flex-flex(1);
+
+    &--minWidth {
+        @include flex-flex-basis(320px);
+    }
+
+    &--grow {
+        @include flex-flex-grow(1);
+    }
+
+    &--shrink {
+        @include flex-flex-shrink(0);
+    }
+
+    &--auto {
+        @include flex-flex--align-auto();
+    }
+
+    &--flex-start {
+        @include flex-flex--align-flex-start();
+    }
+
+    &--flex-end {
+        @include flex-flex--align-flex-end();
+    }
+
+    &--center {
+        @include flex-flex--align-center();
+    }
+
+    &--baseline {
+        @include flex-flex--align-baseline();
+    }
+
+    &--stretch {
+        @include flex-flex--align-stretch();
+    }
+
+    /* .u-flex-50 */
+    &-50 {
+        @include flex-flex(1 1 50%);
+    }
+}

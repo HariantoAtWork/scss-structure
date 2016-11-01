@@ -1,0 +1,15 @@
+/* styling */
+html {  
+    font-family: $fontDefault;
+    font-size: 62.5%; // reset makes 1.0rem equals to 10px;
+    color: $colorDefault;
+
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {  
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+}
+/* END styling */

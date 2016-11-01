@@ -1,0 +1,98 @@
+/* .u-box */
+
+.u-box {
+    @include flex;
+
+    &--inline {
+        @include flex-inline;
+    }
+
+    &--column {
+        @include flex--column;
+    }
+
+    // use this to change behaviour to .flex--row() in media queries
+    &--column-query {
+        @include flex--column;
+    }
+
+    &--row {
+        @include flex--row;
+    }
+
+    // use this to change behaviour to .flex--column() in media queries
+    &--row-query {
+        @include flex--row;
+    }
+
+    // flex-wrap on default `nowrap` where items is inline
+    &--wrap {
+        @include flex--wrap;
+    }
+    &--wrap-reverse {
+        @include flex--wrap-reverse;
+    }
+
+    // justify content HORIZONTALLY - left/right
+    &--justify {
+        &-flex-start {
+            @include flex--justify-flex-start;
+        }
+        &-flex-end {
+            @include flex--justify-flex-end;
+        }
+        &-center {
+            @include flex--justify-center;
+        }
+        &-space-between {
+            @include flex--justify-space-between;
+        }
+        &-space-around {
+            @include flex--justify-space-around;
+        }
+    }
+
+    // align items VERTICALLY - up/down
+    &--align {
+        &-flex-start {
+            @include flex--align-flex-start;
+        }
+        &-flex-end {
+            @include flex--align-flex-end;
+        }
+        &-center {
+            @include flex--align-center;
+        }
+        &-stretch {
+            @include flex--align-stretch;
+        }
+        &-space-between {
+            @include flex--align-space-between;
+        }
+        &-space-around {
+            @include flex--align-space-around;
+        }
+    }
+
+    // align content -- content
+    &--content {
+        &-flex-start {
+            @include flex--content-flex-start;
+        }
+        &-flex-end {
+            @include flex--content-flex-end;
+        }
+        &-center {
+            @include flex--content-center;
+        }
+        &-stretch {
+            @include flex--content-stretch;
+        }
+        &-space-between {
+            @include flex--content-space-between;
+        }
+        &-space-around {
+            @include flex--content-space-around;
+        }
+    }
+}
